@@ -1,0 +1,8 @@
+version: '3.9' # optional since v1.27.0
+services:
+  web:
+    image: tomcat:9.0
+    ports:
+      - '5000:8080'
+    volumes:
+      - ./target/exercise.war:/usr/local/tomcat/webapps/exercise.war
